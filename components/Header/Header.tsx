@@ -41,7 +41,7 @@ export default function Header({
           <a href="#about">{dict.nav.about}</a>
           <a href="#capabilities">{dict.nav.capabilities}</a>
           <a href="#founder">{dict.nav.founder}</a>
-          <a href="tel:+374890059" className={styles.navCall}>{dict.nav.contact}</a>
+          <a href="tel:+37494890059" className={styles.navCall}>{dict.nav.contact}</a>
         </nav>
 
         <div className={styles.actions}>
@@ -67,7 +67,7 @@ export default function Header({
             <a href="#about" onClick={() => setOpen(false)}>{dict.nav.about}</a>
             <a href="#capabilities" onClick={() => setOpen(false)}>{dict.nav.capabilities}</a>
             <a href="#founder" onClick={() => setOpen(false)}>{dict.nav.founder}</a>
-            <a href="tel:+374890059" onClick={() => setOpen(false)}>{dict.nav.contact}</a>
+            <a href="tel:+37494890059" onClick={() => setOpen(false)}>{dict.nav.contact}</a>
           </div>
         )}
       </div>
