@@ -1,0 +1,146 @@
+.section {
+  padding: var(--section-y) 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: 72px;
+  align-items: center;
+}
+
+.media {
+  overflow: hidden;
+  border-radius: 26px;
+  box-shadow: 0 22px 55px rgba(0,0,0,.10);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: cover;
+}
+
+.copy h2 {
+  margin: 0;
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.role {
+  max-width: 650px;
+  margin: 10px 0 0;
+  color: var(--brand);
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 750;
+}
+
+.quote {
+  margin: 28px 0 0;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  font-weight: 650;
+}
+
+.body {
+  max-width: 650px;
+  margin: 18px 0 0;
+  color: #404040;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.link {
+  margin-top: 22px;
+  display: inline-flex;
+  padding: 12px 17px;
+  border: 1px solid rgba(153,16,49,.45);
+  border-radius: 999px;
+  color: var(--brand);
+  font-size: 13px;
+  font-weight: 750;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.link:hover {
+  transform: translateY(-2px);
+  background: white;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 52px;
+  }
+
+  .media {
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 640px) {
+  .quote {
+    margin-top: 22px;
+    font-size: 19px;
+  }
+
+  .body {
+    font-size: 15px;
+  }
+}
+
+.body p {
+  margin: 0;
+}
+
+.body p + p {
+  margin-top: 18px;
+}
+
+
+/* Armenian founder copy is longer; keep it visually within the portrait height. */
+.copyHy h2 {
+  font-size: clamp(26px, 2.5vw, 34px);
+}
+
+.copyHy .role {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.copyHy .quote {
+  font-size: 17px;
+  line-height: 1.35;
+  margin-top: 20px;
+}
+
+.copyHy .body {
+  font-size: 12.5px;
+  line-height: 1.48;
+  margin-top: 14px;
+}
+
+.copyHy .body p + p {
+  margin-top: 11px;
+}
+
+.copyHy .link {
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .copyHy h2 {
+    font-size: 28px;
+  }
+
+  .copyHy .body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}

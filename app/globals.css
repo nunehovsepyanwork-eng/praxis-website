@@ -1,0 +1,148 @@
+:root {
+  --bg: #F2F2F2;
+  --surface: #ffffff;
+  --ink: #161616;
+  --muted: #686868;
+  --brand: #991031;
+  --brand-dark: #741026;
+  --line: rgba(22, 22, 22, 0.10);
+  --soft-line: rgba(22, 22, 22, 0.06);
+  --container: 1180px;
+  --radius: 22px;
+  --section-y: 132px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-manrope), Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+[data-locale="hy"] {
+  font-family: Arial, var(--font-armenian), "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(153, 16, 49, 0.18);
+}
+
+.container {
+  width: min(var(--container), calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.sectionLabel {
+  margin: 0 0 24px;
+  color: var(--brand);
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 700ms cubic-bezier(.22,1,.36,1),
+    transform 700ms cubic-bezier(.22,1,.36,1);
+}
+
+.revealVisible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --section-y: 96px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --section-y: 76px;
+  }
+
+  .container {
+    width: min(var(--container), calc(100% - 30px));
+  }
+
+  .sectionLabel {
+    margin-bottom: 18px;
+    font-size: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+/* PRAXIS typography system
+   English: Manrope
+   Armenian: Noto Sans Armenian fallback
+   Logo artwork remains unchanged (Quilon logotype). */
+html,
+body {
+  font-family: var(--font-manrope), var(--font-armenian), Arial, sans-serif;
+}
+
+.fontEn {
+  font-family: var(--font-manrope), Arial, sans-serif;
+}
+
+.fontHy {
+  font-family: Arial, var(--font-armenian), "Helvetica Neue", sans-serif;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.fontHy {
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.fontHy h1,
+.fontHy h2,
+.fontHy h3,
+.fontHy strong {
+  letter-spacing: -0.025em;
+}
