@@ -74,7 +74,7 @@ const dictionaries = {
     founder: {
       label: "Founder",
       name: "Nune Hovsepyan",
-      role: "",
+      role: "Strategic Communications & Reputation Advisor",
       quote: "I bring 14 years of experience into building PRAXIS.",
       body:
         "I started my career as a journalist covering the legal field, working with news websites and television. That early instinct — to find the story that matters before anything else — is still at the core of how I work today.\\n\\nFor more than 6 years, I led the public relations division at the Office of the Human Rights Defender of Armenia, building the institution's public visibility and developing the Defender's personal brand into a trusted, recognizable voice. It was during this time that I also began consulting on communications and awareness programs for international organizations operating in Armenia — including UNFPA, UNDP, USAID, the U.S. Embassy in Armenia, the European Union, the Council of Europe, and UNICEF — work I've continued ever since. My focus within these programs has centered on breaking down stereotypes and shaping coverage around women, children, and persons with disabilities. I later moved into brand development at a law firm, followed by running a political election campaign.\\n\\nThat experience is now the foundation of PRAXIS — a practice built on the belief that strategy must come before communication. Every challenge is different. Every strategy should be too.",
@@ -161,7 +161,7 @@ const dictionaries = {
     founder: {
       label: "Հիմնադիր",
       name: "Նունե Հովսեփյան",
-      role: "",
+      role: "Ռազմավարական հաղորդակցության ու հեղինակության զարգագման խորհրդատու",
       quote: "PRAXIS-ը հիմնադրելիս ես ներդրել եմ իմ 14 տարվա փորձը",
       body:
         "Մասնագիտական ուղիս սկսել եմ որպես իրավական ոլորտը լուսաբանող լրագրող՝ աշխատելով լրատվական կայքերում և հեռուստատեսությունում։ Այդ տարիներից մնացած կարևոր սկզբունքը՝ պատմություններում ճիշտ «մեխը» գտնելն է, որն ընկած է հետագայում իմ ամբողջ աշխատանքի հիմքում։\\n\\nԱվելի քան 6 տարի ղեկավարել եմ Հայաստանի Մարդու իրավունքների պաշտպանի աշխատակազմի հանրային կապերի բաժինը՝ զարգացնելով հաստատության հանրային վարկանիշը և Պաշտպանի անձնական բրենդը դարձնելով վստահելի ու ճանաչելի։ Այդ ընթացքում սկսել եմ համատեղ աշխատել ու նաև խորհրդատվություն տրամադրել Հայաստանում գործող միջազգային կազմակերպությունների հաղորդակցության և իրազեկման ծրագրերի համար՝ ներառյալ UNFPA-ն, UNDP-ն, USAID-ը, Հայաստանում ԱՄՆ դեսպանությունը, Եվրոպական միությունը, Եվրոպայի խորհուրդը և UNICEF-ը։\\n\\nՄասնագիտացել եմ կանանց, երեխաների ու հաշմանդամություն ունեցող անձանց հետ կապված կարծրատիպերի հաղթահարման ու լուսաբանման հարցերում, և այս համագործակցությունները շարունակվել են նաև հետագայում։ Այնուհետև աշխատել եմ իրավաբանական ընկերությունում բրենդի զարգացման ուղղությամբ։ Ունեմ նաև քաղաքական ընտրարշավի ղեկավարման ու իրականացման փորձ։\\n\\nԱյս տարիների փորձն այսօր դարձել է PRAXIS-ի ստեղծման հիմքը՝ պրակտիկա, որը կառուցված է այն համոզմունքի վրա, որ առանց ռազմավարության հաղորդակցությունը ձախողված է։ Յուրաքանչյուր մարտահրավեր տարբեր է։ Ռազմավարությունը՝ նույնպես։",
