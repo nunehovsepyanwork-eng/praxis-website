@@ -1,12 +1,33 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 50;
-  border-bottom: 1px solid var(--soft-line);
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
-  backdrop-filter: blur(18px);
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid transparent;
+  background: rgba(242, 242, 242, 0.96);
+  transition:
+    background 0.3s ease,
+    backdrop-filter 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
+.scrolled {
+  background: rgba(189, 187, 186, 0.72);
 
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
+  backdrop-filter: blur(20px) saturate(100%);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+.scrolled .menuButton {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+}
 .inner {
   position: relative;
   min-height: 88px;
@@ -140,7 +161,7 @@
     border: 1px solid var(--line);
     border-radius: 18px;
     background: var(--bg);
-    box-shadow: 0 20px 60px rgba(0,0,0,.10);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .10);
   }
 
   .mobilePanel a {

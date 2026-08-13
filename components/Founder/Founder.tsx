@@ -22,7 +22,9 @@ export default function Founder({ dict }: { dict: Dictionary }) {
 
         <div className={`${styles.copy} ${dict.founder.label === "Հիմնադիր" ? styles.copyHy : ""}`}>
           <h2>{dict.founder.name}</h2>
-          <p className={styles.role}>{dict.founder.role}</p>
+          {dict.founder.role ? (
+  <p className={styles.role}>{dict.founder.role}</p>
+) : null}
           <p className={styles.quote}>{dict.founder.quote}</p>
 
           <div className={styles.body}>
@@ -37,7 +39,7 @@ export default function Founder({ dict }: { dict: Dictionary }) {
             target="_blank"
             rel="noreferrer"
           >
-            {dict.founder.linkedin} ↗
+            {dict.founder.linkedin}
           </a>
         </div>
       </div>

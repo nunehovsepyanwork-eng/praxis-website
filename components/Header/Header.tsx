@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import styles from "./Header.module.css";
 
@@ -16,6 +16,18 @@ export default function Header({
 }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+const [scrolled, setScrolled] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 20);
+  };
+
+  handleScroll();
+  window.addEventListener("scroll", handleScroll);
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   const languagePath = (target: Locale) => {
     const parts = pathname.split("/");
@@ -24,7 +36,7 @@ export default function Header({
   };
 
   return (
-    <header className={styles.header}>
+ <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.inner}`}>
         <Link href={`/${locale}`} className={styles.brand} aria-label="PRAXIS">
           <Image

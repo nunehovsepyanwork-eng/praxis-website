@@ -146,3 +146,36 @@ select {
 .fontHy strong {
   letter-spacing: -0.025em;
 }
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 900px) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .revealVisible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+.reveal,
+.revealVisible {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+main {
+  padding-top: 88px;
+}
+
+@media (max-width: 900px) {
+  main {
+    padding-top: 76px;
+  }
+}

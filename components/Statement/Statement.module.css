@@ -65,3 +65,48 @@
   color: var(--brand);
   font-style: italic;
 }
+@media (max-width: 640px) {
+  .text {
+    width: 100%;
+    max-width: 100%;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .line {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  :global(.fontHy) .text {
+    font-size: 23px;
+    line-height: 1.24;
+    letter-spacing: -0.01em;
+  }
+}@media (max-width: 640px) {
+  .inner {
+    grid-template-columns: 12px minmax(0, 1fr);
+    gap: 16px;
+    width: 100%;
+  }
+
+  .inner p {
+    min-width: 0;
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 1.28;
+    letter-spacing: -0.015em;
+  }
+
+  .line {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .accent {
+    color: var(--brand);
+  }
+}

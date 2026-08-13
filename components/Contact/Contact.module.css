@@ -53,3 +53,20 @@
     font-size: 28px;
   }
 }
+.linkedinLogo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 0;
+  transition: opacity 0.2s ease;
+}
+
+.linkedinLogo:hover {
+  opacity: 0.8;
+}
+
+.linkedinImage {
+  width: 70px;
+  height: auto;
+  display: block;
+}

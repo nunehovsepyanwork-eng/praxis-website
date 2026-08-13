@@ -127,7 +127,7 @@
   box-shadow: 0 0 0 16px rgba(153,16,49,.045);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 640px) {
   .inner {
     min-height: auto;
     grid-template-columns: 1fr;
@@ -145,7 +145,10 @@
   }
 
   .copy h1 {
-    font-size: clamp(48px, 10vw, 70px);
+    font-size: clamp(36px, 10vw, 46px);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+  max-width: 100%;
   }
 }
 
@@ -160,9 +163,9 @@
   }
 
   .body {
-    margin-top: 26px;
-    font-size: 16px;
-    line-height: 1.65;
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.6;
   }
 
   .buttons {
@@ -177,5 +180,19 @@
 
   .micro {
     margin-top: 28px;
+  }
+}
+@media (max-width: 640px) {
+  :global(.fontHy) .copy h1 {
+    font-size: clamp(34px, 9.5vw, 42px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .primary,
+  .secondary {
+    min-height: 44px;
+    padding: 0 18px;
+    font-size: 12px;
   }
 }
