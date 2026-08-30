@@ -238,6 +238,9 @@ export default function RootLayout({
       lang="en"
       className={`${manrope.variable} ${notoArmenian.variable}`}
     >
+      <head>
+        <meta name="msvalidate.01" content="BD6A691B70E2486B6140B9ED8EFF70C5" />
+      </head>
       <body>
         <script
           type="application/ld+json"
