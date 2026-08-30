@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Noto_Sans_Armenian } from "next/font/google";
 import "./globals.css";
+import SetHtmlLang from "./SetHtmlLang";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -242,6 +243,7 @@ export default function RootLayout({
         <meta name="msvalidate.01" content="BD6A691B70E2486B6140B9ED8EFF70C5" />
       </head>
       <body>
+        <SetHtmlLang />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
