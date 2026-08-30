@@ -93,6 +93,7 @@ const praxisSchema = {
 
       alternateName:
         "PRAXIS Strategic Communications & Reputation Firm",
+        "ՊՐԱՔՍԻՍ",
 
       url: "https://praxis.am/",
 
