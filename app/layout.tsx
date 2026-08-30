@@ -16,13 +16,25 @@ const notoArmenian = Noto_Sans_Armenian({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://praxis.am"),
+
   title: "PRAXIS | Strategic Communications & Reputation Firm in Armenia",
+
   description:
     "PRAXIS is a strategic communications and reputation firm in Armenia helping leaders and organizations build trust, strengthen reputation, and support long-term growth.",
+
   applicationName: "PRAXIS",
-  authors: [{ name: "PRAXIS" }],
-  creator: "PRAXIS",
+
+  authors: [
+    {
+      name: "Nune Hovsepyan",
+      url: "https://www.linkedin.com/in/nune-hovsepyan/",
+    },
+  ],
+
+  creator: "Nune Hovsepyan",
+
   publisher: "PRAXIS",
+
   robots: {
     index: true,
     follow: true,
@@ -34,41 +46,206 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+
+  openGraph: {
+    title: "PRAXIS | Strategic Communications & Reputation Firm in Armenia",
+    description:
+      "PRAXIS is a strategic communications and reputation firm in Armenia helping leaders and organizations build trust, strengthen reputation, and support long-term growth.",
+    url: "https://praxis.am/",
+    siteName: "PRAXIS",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://praxis.am/praxis-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "PRAXIS | Strategic Communications & Reputation",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "PRAXIS | Strategic Communications & Reputation",
+    description:
+      "Strategic communications and reputation advisory for leaders and organizations.",
+    images: ["https://praxis.am/praxis-logo.png"],
+  },
 };
 
-const organizationSchema = {
+/*
+  PRAXIS Structured Data
+  Schema.org JSON-LD
+*/
+
+const praxisSchema = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://praxis.am/#organization",
-  name: "PRAXIS",
-  url: "https://praxis.am",
-  logo: "https://praxis.am/praxis-logo.png",
-  description:
-    "Strategic communications and reputation firm helping leaders and organizations build trust, strengthen reputation, and support long-term growth.",
-  foundingDate: "2026",
-  areaServed: {
-    "@type": "Country",
-    name: "Armenia",
-  },
-  email: "info@praxis.am",
-  founder: {
-    "@type": "Person",
-    name: "Nune Hovsepyan",
-    jobTitle: "Founder of PRAXIS | Strategic Communications & Reputation Advisor",
-  },
-  sameAs: ["https://www.linkedin.com/in/nune-hovsepyan/"],
+
+  "@graph": [
+    {
+      "@type": "Organization",
+
+      "@id": "https://praxis.am/#organization",
+
+      name: "PRAXIS",
+
+      alternateName:
+        "PRAXIS Strategic Communications & Reputation Firm",
+
+      url: "https://praxis.am/",
+
+      logo: {
+        "@type": "ImageObject",
+        "@id": "https://praxis.am/#logo",
+        url: "https://praxis.am/praxis-logo.png",
+        contentUrl: "https://praxis.am/praxis-logo.png",
+      },
+
+      description:
+        "PRAXIS is a strategic communications and reputation firm in Armenia helping leaders and organizations build trust, strengthen reputation, and support long-term growth.",
+
+      foundingDate: "2026",
+
+      founder: {
+        "@id": "https://praxis.am/#nune-hovsepyan",
+      },
+
+      areaServed: {
+        "@type": "Country",
+        name: "Armenia",
+      },
+
+      email: "info@praxis.am",
+
+      knowsAbout: [
+        "Strategic Communications",
+        "Reputation Management",
+        "Reputation Advisory",
+        "Executive Branding",
+        "Leadership Communications",
+        "Crisis Communications",
+        "Corporate Communications",
+        "Public Relations",
+        "Marketing Strategy",
+        "Personal Branding",
+      ],
+
+      sameAs: [
+        "https://www.linkedin.com/company/138454576",
+      ],
+    },
+
+    {
+      "@type": "Person",
+
+      "@id": "https://praxis.am/#nune-hovsepyan",
+
+      name: "Nune Hovsepyan",
+
+      givenName: "Nune",
+
+      familyName: "Hovsepyan",
+
+      url: "https://www.linkedin.com/in/nune-hovsepyan/",
+
+      image: "https://praxis.am/nune-hovsepyan.png",
+
+      jobTitle:
+        "Founder | Strategic Communications & Reputation Advisor",
+
+      description:
+        "Nune Hovsepyan is a strategic communications and reputation advisor, PR specialist, media expert, and founder of PRAXIS.",
+
+      worksFor: {
+        "@id": "https://praxis.am/#organization",
+      },
+
+      sameAs: [
+        "https://www.linkedin.com/in/nune-hovsepyan/",
+      ],
+
+      knowsAbout: [
+        "Strategic Communications",
+        "Public Relations",
+        "Reputation Management",
+        "Executive Branding",
+        "Crisis Communications",
+        "Media Relations",
+        "Leadership Communications",
+        "Personal Branding",
+        "Strategic Marketing",
+      ],
+    },
+
+    {
+      "@type": "WebSite",
+
+      "@id": "https://praxis.am/#website",
+
+      url: "https://praxis.am/",
+
+      name: "PRAXIS",
+
+      description:
+        "Strategic Communications & Reputation Firm in Armenia",
+
+      publisher: {
+        "@id": "https://praxis.am/#organization",
+      },
+
+      inLanguage: [
+        "en",
+        "hy",
+      ],
+    },
+
+    {
+      "@type": "WebPage",
+
+      "@id": "https://praxis.am/#webpage",
+
+      url: "https://praxis.am/",
+
+      name:
+        "PRAXIS | Strategic Communications & Reputation Firm in Armenia",
+
+      description:
+        "PRAXIS is a strategic communications and reputation firm in Armenia helping leaders and organizations build trust, strengthen reputation, and support long-term growth.",
+
+      isPartOf: {
+        "@id": "https://praxis.am/#website",
+      },
+
+      about: {
+        "@id": "https://praxis.am/#organization",
+      },
+
+      mainEntity: {
+        "@id": "https://praxis.am/#organization",
+      },
+
+      inLanguage: "en",
+    },
+  ],
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${notoArmenian.variable}`}>
+    <html
+      lang="en"
+      className={`${manrope.variable} ${notoArmenian.variable}`}
+    >
       <body>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(praxisSchema),
+          }}
         />
+
         {children}
       </body>
     </html>
