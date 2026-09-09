@@ -20,10 +20,10 @@ const dictionaries = {
       menu: "Menu",
     },
     hero: {
-      title1: "Right diagnosis.",
-      title2: "Right strategy.",
+      title1: "We don't sell templates.",
+      title2: "We ask the right questions first.",
       body:
-        "We partner with leadership teams to understand what’s actually driving their communications and reputation challenges, then build the strategy — from crisis response to executive branding — that fits their specific context.",
+        "PRAXIS builds strategy around your goals — never a one-size-fits-all approach.",
       primary: "Let’s Talk Strategy",
       secondary: "Explore Capabilities",
       micro: "",
@@ -32,9 +32,13 @@ const dictionaries = {
       label: "About PRAXIS",
       title: "Every challenge is different. Every strategy should be too.",
       p1:
-        "PRAXIS is a strategic communications and reputation firm helping leaders and organizations who are ready to invest not just in advertising, but in reputation, trust, and long-term growth. We become our clients\' strategic communications partner — helping them navigate high-stakes decisions, from crisis response to executive branding.",
+        "PRAXIS is a strategic communications and reputation firm in Armenia that doesn't offer pre-packaged strategies — it builds a strategy shaped around your specific needs, your leadership, and your timing.",
       p2:
-        "We believe communication rarely fails because of poor execution. It fails because the wrong problem is being solved.",
+        "PRAXIS believes every challenge is different. Every strategy should be too.",
+      p3:
+        "PRAXIS works with leaders and organizations who are ready to invest not just in advertising, but in reputation, trust, and long-term growth — becoming their strategic communications partner for high-stakes decisions, from crisis response to executive branding.",
+    },
+    capabilities: {
     },
     capabilities: {
       label: "Capabilities",
@@ -77,7 +81,7 @@ const dictionaries = {
       role: "Strategic Communications & Reputation Advisor",
       quote: "I bring 14 years of experience into building PRAXIS.",
       body:
-        "I started my career as a journalist covering the legal field, working with news websites and television. That early instinct — to find the story that matters before anything else — is still at the core of how I work today.\\n\\nFor more than 6 years, I led the public relations division at the Office of the Human Rights Defender of Armenia, building the institution's public visibility and developing the Defender's personal brand into a trusted, recognizable voice. It was during this time that I also began consulting on communications and awareness programs for international organizations operating in Armenia — including UNFPA, UNDP, USAID, the U.S. Embassy in Armenia, the European Union, the Council of Europe, and UNICEF — work I've continued ever since. My focus within these programs has centered on breaking down stereotypes and shaping coverage around women, children, and persons with disabilities. I later moved into brand development at a law firm, followed by running a political election campaign.\\n\\nThat experience is now the foundation of PRAXIS — a practice built on the belief that strategy must come before communication. Every challenge is different. Every strategy should be too.",
+        "I started my career as a journalist covering the legal field, working with news websites and television. One principle from those early years has stayed with me: *finding the right “hook” in every story* — the idea that matters most. That way of thinking has since become the foundation of my work: understanding the essence of a challenge, identifying its key message, and building the right communication around it.\\n\\nFor more than 6 years, I led the Public Relations Division at the Office of the Human Rights Defender of Armenia, working to strengthen the institution’s public reputation and develop the Defender’s personal brand into a trusted and recognizable voice.\\n\\nDuring this period, I also began consulting on communications and awareness-raising programs for international organizations operating in Armenia, including UNFPA, UNDP, USAID, the U.S. Embassy in Armenia, the European Union, the Council of Europe, and UNICEF.\\n\\nAn important part of my professional experience has focused on challenging stereotypes surrounding women, children, and persons with disabilities, and on shaping responsible and impactful communication around these issues.\\n\\nI later worked on brand development at a law firm and also gained experience leading and implementing a political election campaign.\\n\\nThis experience became the foundation for PRAXIS.\\n\\nPRAXIS does not offer ready-made strategies. We start with the right questions and build a strategy around your goals, leadership, and context.\\n\\nBecause every challenge is different.\\n\\nEvery strategy should be too.\\n\\n",
       linkedin: "Connect on LinkedIn",
     },
     contact: {
@@ -107,10 +111,9 @@ const dictionaries = {
       menu: "Մենյու",
     },
     hero: {
-      title1: "Ճիշտ ախտորոշում,",
-      title2: "ճիշտ ռազմավարություն",
+      title1: "Ո՛Չ ՊԱՏՐԱՍՏԻ ՁԵՎԱԹՂԹԻՆ",
       body:
-        "Մենք բացահայտում ենք ձեր հաղորդակցային և հեղինակության իրական ռիսկերը, ապա ստեղծում ռազմավարություն՝ ճգնաժամային կառավարումից մինչև ղեկավարների անձնական բրենդի զարգացում",
+        "PRAXIS-ը կառուցում է ռազմավարություն ձեր նպատակների շուրջ, ոչ թե պատրաստի ձևանմուշով։",
       primary: "ԿԱՊ",
       secondary: "Ծանոթանալ ծառայություններին",
       micro: "",
@@ -119,9 +122,11 @@ const dictionaries = {
       label: "PRAXIS-ի մասին",
       title: "Յուրաքանչյուր մարտահրավեր տարբեր է, Ռազմավարությունը՝ նույնպես",
       p1:
-        "PRAXIS-ը ռազմավարական հաղորդակցության և հեղինակության զարգացման ընկերություն է, որն օգնում է ղեկավարներին և կազմակերպություններին, ովքեր պատրաստ են ներդնել ոչ միայն գովազդի, այլ նաև հեղինակության, վստահության և երկարաժամկետ աճի մեջ։",
+        "Պրաքսիսը ռազմավարական հաղորդակցության և հեղինակության զարգացման ընկերություն է Հայաստանում, որը ոչ թե առաջարկում է պատրաստի ռազմավարություններ, այլ կառուցում է ձեր կոնկրետ կարիքներին, ղեկավարությանը և ժամանակին համապատասխան ռազմավարություն։",
       p2:
-        "Հաղորդակցությունը հազվադեպ է ձախողվում այն պատճառով, որ վատ է իրականացվում։ Այն ձախողվում է, երբ ի սկզբանե սխալ խնդիր է լուծվում։",
+        "Յուրաքանչյուր մարտահրավեր տարբեր է, հետևաբար յուրաքանչյուր ռազմավարություն նույնպես պետք է տարբեր լինի։",
+      p3:
+        "Պրաքսիսն աշխատում է այն ղեկավարների ու կազմակերպությունների հետ, ովքեր պատրաստ են ներդնել ոչ միայն գովազդի, այլև հեղինակության, վստահության և երկարաժամկետ աճի մեջ՝ դառնալով նրանց ռազմավարական հաղորդակցության գործընկերն ամենակարևոր որոշումների համար՝ ճգնաժամային կառավարումից մինչև ղեկավարների անձնական բրենդինգ։",
     },
     capabilities: {
       label: "Ծառայություններ",

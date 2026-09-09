@@ -91,10 +91,10 @@ const praxisSchema = {
 
       name: "PRAXIS",
 
-      alternateName:
+      alternateName:[
         "PRAXIS Strategic Communications & Reputation Firm",
         "ՊՐԱՔՍԻՍ",
-
+],
       url: "https://praxis.am/",
 
       logo: {

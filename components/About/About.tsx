@@ -13,6 +13,7 @@ export default function About({ dict }: { dict: Dictionary }) {
         <div className={styles.copy}>
           <p>{dict.about.p1}</p>
           <p>{dict.about.p2}</p>
+          <p>{dict.about.p3}</p>
         </div>
       </div>
     </section>
