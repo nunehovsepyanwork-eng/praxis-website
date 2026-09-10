@@ -38,8 +38,7 @@ const dictionaries = {
       p3:
         "PRAXIS works with leaders and organizations who are ready to invest not just in advertising, but in reputation, trust, and long-term growth — becoming their strategic communications partner for high-stakes decisions, from crisis response to executive branding.",
     },
-    capabilities: {
-    },
+   
     capabilities: {
       label: "Capabilities",
       title: "From plan to execution, fully covered.",
@@ -112,6 +111,7 @@ const dictionaries = {
     },
     hero: {
       title1: "Ո՛Չ ՊԱՏՐԱՍՏԻ ՁԵՎԱԹՂԹԻՆ",
+      title2: "Սկզբում տալիս ենք ճիշտ հարցերը",
       body:
         "PRAXIS-ը կառուցում է ռազմավարություն ձեր նպատակների շուրջ, ոչ թե պատրաստի ձևանմուշով։",
       primary: "ԿԱՊ",
