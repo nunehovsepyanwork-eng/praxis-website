@@ -50,9 +50,9 @@ useEffect(() => {
         </Link>
 
         <nav className={styles.desktopNav}>
-          <a href="#about">{dict.nav.about}</a>
-          <a href="#capabilities">{dict.nav.capabilities}</a>
-          <a href="#founder">{dict.nav.founder}</a>
+          <a href={`/${locale}#about`}>{dict.nav.about}</a>
+          <a href={`/${locale}#capabilities`}>{dict.nav.capabilities}</a>
+          <a href={`/${locale}#founder`}>{dict.nav.founder}</a>
           <a href="tel:+37494890059" className={styles.navCall}>{dict.nav.contact}</a>
         </nav>
 
@@ -75,13 +75,24 @@ useEffect(() => {
         </div>
 
         {open && (
-          <div className={styles.mobilePanel}>
-            <a href="#about" onClick={() => setOpen(false)}>{dict.nav.about}</a>
-            <a href="#capabilities" onClick={() => setOpen(false)}>{dict.nav.capabilities}</a>
-            <a href="#founder" onClick={() => setOpen(false)}>{dict.nav.founder}</a>
-            <a href="tel:+37494890059" onClick={() => setOpen(false)}>{dict.nav.contact}</a>
-          </div>
-        )}
+  <div className={styles.mobilePanel}>
+    <a href={`/${locale}#about`} onClick={() => setOpen(false)}>
+      {dict.nav.about}
+    </a>
+
+    <a href={`/${locale}#capabilities`} onClick={() => setOpen(false)}>
+      {dict.nav.capabilities}
+    </a>
+
+    <a href={`/${locale}#founder`} onClick={() => setOpen(false)}>
+      {dict.nav.founder}
+    </a>
+
+    <a href="tel:+37494890059" onClick={() => setOpen(false)}>
+      {dict.nav.contact}
+    </a>
+  </div>
+)}
       </div>
     </header>
   );

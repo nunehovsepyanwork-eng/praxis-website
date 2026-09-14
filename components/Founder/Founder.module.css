@@ -144,3 +144,41 @@
     line-height: 1.6;
   }
 }
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.actions .link {
+  margin-top: 0;
+}
+
+.portfolioLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 24px;
+
+  background: #991031;
+  border: 1px solid #991031;
+  border-radius: 999px;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.portfolioLink:hover {
+  background: #7d0d28;
+  transform: translateY(-1px);
+}

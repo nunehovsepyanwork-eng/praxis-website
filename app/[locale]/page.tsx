@@ -18,18 +18,20 @@ export default async function Home({ params }: Props) {
 
   const dict = getDictionary(locale);
 
-  return (
-    <>
-      <Header locale={locale} dict={dict} />
-      <main className={locale === "hy" ? "fontHy" : "fontEn"}>
-        <Hero dict={dict} />
-        <Reveal><About dict={dict} /></Reveal>
-        <Reveal><Capabilities dict={dict} /></Reveal>
-        <Reveal><Statement dict={dict} /></Reveal>
-        <Reveal><Founder dict={dict} /></Reveal>
-        <Reveal><Contact dict={dict} /></Reveal>
-      </main>
-      <Footer dict={dict} />
-    </>
-  );
+return (
+  <>
+    <Header locale={locale} dict={dict} />
+
+    <main className={locale === "hy" ? "fontHy" : "fontEn"}>
+      <Hero dict={dict} />
+      <Reveal><About dict={dict} /></Reveal>
+      <Reveal><Capabilities dict={dict} /></Reveal>
+      <Reveal><Statement dict={dict} /></Reveal>
+      <Reveal><Founder dict={dict} locale={locale} /></Reveal>
+      <Reveal><Contact dict={dict} /></Reveal>
+    </main>
+
+    <Footer dict={dict} />
+  </>
+);
 }

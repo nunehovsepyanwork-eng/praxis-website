@@ -1,0 +1,231 @@
+.selectedWork {
+  padding: 72px 7vw 110px;
+  background: #f7f6f3;
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 30px;
+}
+
+.sectionHeading h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 44px;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.headingLine {
+  flex: 1;
+  height: 1px;
+  background: rgba(153, 16, 49, 0.48);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.filters button {
+  border: 1px solid #e1ddd8;
+  background: #eceae6;
+  color: #333;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 12px;
+  cursor: pointer;
+  transition:
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    color 0.22s ease,
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.filters button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(153, 16, 49, 0.35);
+  color: #991031;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.filters button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.filters button:focus-visible {
+  outline: 2px solid #991031;
+  outline-offset: 3px;
+}
+
+.filterActive {
+  background: #991031 !important;
+  border-color: #991031 !important;
+  color: #fff !important;
+}
+
+.filterActive:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.workCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
+  overflow: hidden;
+  background: #fbfaf8;
+  border: 1px solid #dedad4;
+  animation: cardReveal 0.35s ease both;
+}
+
+.cardImageWrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #e5e2de;
+}
+
+.cardImage {
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.workCard:hover .cardImage {
+  transform: scale(1.025);
+}
+
+.cardBody {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 21px 20px 20px;
+}
+
+.cardCategory {
+  margin-bottom: 12px;
+  color: #991031;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.cardBody h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+}
+
+.cardSubtitle {
+  margin: 10px 0 0;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.cardMetrics {
+  display: flex;
+  gap: 28px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #e2ded8;
+}
+
+.cardMetrics div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardMetrics strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cardMetrics span {
+  margin-top: 4px;
+  color: #777;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+.viewCase {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 24px;
+  border: 0;
+  background: transparent;
+  color: #991031;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1050px) {
+  .workGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .selectedWork {
+    padding: 54px 24px 72px;
+  }
+
+  .sectionHeading h2 {
+    font-size: 34px;
+  }
+
+  .workGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .workCard {
+    min-height: auto;
+  }
+
+  .filters button {
+    padding: 9px 14px;
+    font-size: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .filters button,
+  .cardImage,
+  .workCard {
+    transition: none;
+    animation: none;
+  }
+}

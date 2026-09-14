@@ -1,0 +1,322 @@
+.page {
+  min-height: 100vh;
+  background: #f7f6f3;
+  color: #111;
+}
+
+
+/* =========================================
+   PROFILE / ABOUT
+========================================= */
+
+.profileSection {
+  width: calc(100% - 140px);
+  max-width: none;
+  margin: 0 auto;
+
+  padding: 54px 0 56px;
+
+  border-bottom: 1px solid #ddd8d2;
+
+  overflow: hidden;
+}
+
+/* FLOATING IMAGE:
+   text can continue underneath it
+*/
+
+.profileImageWrap {
+  float: right;
+
+  width: 48%;
+  margin: 0 0 32px 64px;
+
+  background: #e8e5e0;
+
+  overflow: hidden;
+}
+
+.profileImage {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+
+/* TEXT */
+
+.profileContent h1 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(54px, 4.2vw, 78px);
+  line-height: 0.98;
+
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.role {
+  margin: 14px 0 30px !important;
+
+  color: #666 !important;
+
+  font-size: 21px !important;
+  line-height: 1.35 !important;
+}
+
+.profileContent h2 {
+  margin: 0 0 30px;
+
+  max-width: 650px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 34px;
+  line-height: 1.12;
+
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.profileContent p {
+  margin: 0 0 18px;
+
+  color: #4d4d4d;
+
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.profileContent em {
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.closingStatement {
+  margin-top: 30px !important;
+
+  color: #111 !important;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 27px !important;
+  line-height: 1.15 !important;
+
+  font-style: italic;
+}
+
+
+/* =========================================
+   METRICS + LINKEDIN
+========================================= */
+
+.metrics {
+  width: calc(100% - 140px);
+  max-width: none;
+  margin: 0 auto;
+
+  min-height: 118px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr;
+
+  align-items: center;
+
+  border-bottom: 1px solid #ddd8d2;
+}
+
+.metric {
+  min-height: 74px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 38px;
+
+  border-right: 1px solid #d8d3cd;
+}
+
+.metric:first-child {
+  padding-left: 0;
+}
+
+.metric strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 44px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.metric span {
+  margin-top: 8px;
+
+  color: #666;
+
+  font-size: 12px;
+}
+
+
+/* LinkedIn — NO BORDER BUTTON */
+
+.linkedinLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  color: #111;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.linkedinLink:hover {
+  opacity: 0.65;
+}
+
+.linkedinIcon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 3px;
+
+  background: #0a66c2;
+
+  color: #fff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.linkedinArrow {
+  font-size: 21px;
+
+  transition: transform 0.2s ease;
+}
+
+.linkedinLink:hover .linkedinArrow {
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .profileSection {
+    width: calc(100% - 48px);
+  }
+
+  .profileImageWrap {
+  float: right;
+
+  width: 49%;
+  margin: 0 0 34px 70px;
+
+  background: #e8e5e0;
+
+  overflow: hidden;
+}
+  .profileContent h1 {
+    font-size: 52px;
+  }
+
+  .role {
+    font-size: 18px !important;
+  }
+
+  .profileContent h2 {
+    font-size: 27px;
+  }
+
+  .metrics {
+    width: calc(100% - 48px);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 720px) {
+
+  .profileSection {
+    width: calc(100% - 32px);
+
+    padding: 32px 0 40px;
+  }
+
+  .profileImageWrap {
+    float: none;
+
+    width: 100%;
+
+    margin: 0 0 30px;
+  }
+
+  .profileContent h1 {
+    font-size: 45px;
+  }
+
+  .role {
+    margin-bottom: 24px !important;
+
+    font-size: 17px !important;
+  }
+
+  .profileContent h2 {
+    font-size: 26px;
+  }
+
+  .profileContent p {
+    font-size: 14px;
+  }
+
+  .closingStatement {
+    font-size: 24px !important;
+  }
+
+  .metrics {
+    width: calc(100% - 32px);
+
+    grid-template-columns: 1fr;
+
+    padding: 10px 0 20px;
+  }
+
+  .metric {
+    min-height: 90px;
+
+    padding: 0;
+
+    border-right: 0;
+    border-bottom: 1px solid #ddd8d2;
+  }
+
+  .linkedinLink {
+    min-height: 90px;
+
+    justify-content: flex-start;
+  }
+}
