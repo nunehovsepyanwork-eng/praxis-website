@@ -122,17 +122,7 @@ export default async function CaseStudyPage({ params }: Props) {
                         styles.brandProjectContent
                       }
                     >
-                      <span
-                        className={
-                          styles.brandProjectNumber
-                        }
-                      >
-                        {String(index + 1).padStart(
-                          2,
-                          "0"
-                        )}
-                      </span>
-
+                     
                       <span
                         className={
                           styles.brandProjectCategory

@@ -90,6 +90,17 @@ export const projects: Project[] = [
       { value: "4.1×", label: "increase in requests" },
     ],
   },
+    {
+  id: "humanizing-political-leader-storytelling",
+  category: "Storytelling",
+  title: "Human-Centered Storytelling",
+  subtitle: "Humanizing a Political Leader Through Storytelling",
+  image: "/portfolio/human-centered.png",
+  metrics: [
+    { value: "1M+", label: "social media views" },
+    { value: "50+", label: "media publications" },
+  ],
+},
 
   {
     id: "brand-identity-development",
@@ -106,10 +117,11 @@ export const projects: Project[] = [
     title: "Arman Tatoyan — Executive Positioning & Public Reputation",
     subtitle: "Human Rights Defender of Armenia",
     image: "/portfolio/arman-tatoyan-positioning.jpg",
-    metrics: [
-      { value: "6", label: "years" },
-      { value: "29% → 81%", label: "institutional trust" },
-    ],
+   metrics: [
+  { value: "29% → 81%", label: "Institutional Trust" },
+  { value: "10K → 60K", label: "Facebook Followers" },
+  { value: "0 → 30K", label: "Instagram Followers" },
+],
   },
 
   {
@@ -128,15 +140,5 @@ export const projects: Project[] = [
     image: "/portfolio/success-stories-video-series.png",
   },
 
-  {
-  id: "humanizing-political-leader-storytelling",
-  category: "Storytelling",
-  title: "Human-Centered Storytelling",
-  subtitle: "Humanizing a Political Leader Through Storytelling",
-  image: "/portfolio/human-centered.png",
-  metrics: [
-    { value: "1M+", label: "social media views" },
-    { value: "50+", label: "media publications" },
-  ],
-},
+
 ];

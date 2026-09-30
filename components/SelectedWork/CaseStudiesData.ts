@@ -573,20 +573,20 @@ export const caseStudies: CaseStudy[] = [
     "These indicators reflect the institution’s overall performance during this period and are not attributed to communications alone.",
   ],
 
-  metrics: [
-    {
-      value: "6 years",
-      label: "communications leadership",
-    },
-    {
-      value: "29% → 81%",
-      label: "institutional trust",
-    },
-    {
-      value: "Highest",
-      label: "public satisfaction among state institutions",
-    },
-  ],
+metrics: [
+  {
+    value: "29% → 81%",
+    label: "Institutional Trust",
+  },
+  {
+    value: "10K → 60K",
+    label: "Facebook Followers (Official Page)",
+  },
+  {
+    value: "0 → 30K",
+    label: "Instagram Followers (Personal Account)Organic Audience Growth",
+  },
+],
 },
 
 {
@@ -723,19 +723,19 @@ export const caseStudies: CaseStudy[] = [
       selectedWork: [
         {
           label: "Women’s Rights at Work",
-          url: "https://www.youtube.com/watch?v=twqRgKMeGLE",
-        },
-        {
-          label: "Maternity & Employment Rights",
           url: "https://www.youtube.com/watch?v=moHHqZAc5qU",
         },
         {
-          label: "Access to Age Pension",
+          label: "Maternity & Employment Rights",
           url: "https://www.youtube.com/watch?v=TUM-fwrOLNs",
         },
         {
-          label: "Disability Recognition",
+          label: "Access to Age Pension",
           url: "https://www.youtube.com/watch?v=rHAYwR2KAMQ",
+        },
+        {
+          label: "Disability Recognition",
+          url: "https://www.youtube.com/watch?v=twqRgKMeGLE",
         },
       ],
     },
