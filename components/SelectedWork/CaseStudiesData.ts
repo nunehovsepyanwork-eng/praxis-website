@@ -812,7 +812,70 @@ metrics: [
     ],
   },
 
-  ];
+  {
+    slug: "combating-hate-speech",
+    category: "Campaigns",
+    title: "Combating Hate Speech Through Public Awareness",
+    subtitle: "Human Rights Defender of Armenia | EU & Council of Europe Project",
+    image: "/portfolio/combating-hate-speech.png",
+
+    intro:
+      "A multi-channel awareness-raising campaign designed to clarify the Human Rights Defender’s role in combating hate speech through educational video content and national, regional and online media distribution. The campaign was implemented within the EU and Council of Europe-funded project “Strengthening the access to justice through non-judiciary redress mechanisms for victims of discrimination, hate crime and hate speech,” under the Partnership for Good Governance II. The initiative aimed to improve public understanding of the Human Rights Defender’s mandate and mechanisms for addressing hate speech.",
+
+    role: [
+      "Campaign implementation coordinated and overseen by Nune Hovsepyan, Head of PR Unit at the Human Rights Defender’s Institution of Armenia.",
+      "Her responsibilities covered script review and approval, production oversight, supervision of the implementing company, coordination with project partners, and national and regional media distribution.",
+    ],
+
+    challenge: [
+      "Amid widespread hate speech in Armenia, the public frequently expected the Human Rights Defender to intervene.",
+      "The challenge was to address the gap between public expectations and the institution’s legal mandate, explaining its role in individual cases alongside its broader preventive, educational and systemic responsibilities.",
+    ],
+
+    approachIntro:
+      "The campaign combined accessible educational content with multi-channel distribution to explain the institution’s mandate to a wider audience.",
+
+    approach: [
+      {
+        number: "01",
+        title: "Clarify the Institutional Mandate",
+        text: "Explain the Human Rights Defender’s responsibilities and available mechanisms for addressing hate speech, including individual cases and public awareness activities.",
+        selectedWork: [
+          {
+            label: "Watch the campaign video",
+            url: "https://www.youtube.com/watch?v=8Km15GjvHtU",
+          },
+        ],
+      },
+      {
+        number: "02",
+        title: "Make Complex Issues Accessible",
+        text: "Use informative video storytelling to communicate institutional responsibilities while emphasizing human rights, dignity and mutual respect.",
+        selectedWork: [
+          {
+            label: "Watch the awareness-raising video",
+            url: "https://www.youtube.com/watch?v=znEYD5plS-g",
+          },
+        ],
+      },
+      {
+        number: "03",
+        title: "Deliver National & Regional Media Distribution",
+        text: "Distribute campaign content through online media, Armenia’s Public Television and regional TV channels, extending distribution beyond digital platforms.",
+      },
+    ],
+
+    impact: [
+      "The campaign delivered educational content explaining the Human Rights Defender’s mandate and secured distribution across national, regional and online media channels.",
+    ],
+
+    metrics: [
+      { value: "30+", label: "media outlets distributed campaign content" },
+      { value: "National TV", label: "broadcast on Armenia’s Public Television" },
+      { value: "Regional TV", label: "broadcasts through regional television channels" },
+    ],
+  },
+];
 
 export function getCaseStudy(slug: string) {
   return caseStudies.find((item) => item.slug === slug);

@@ -60,12 +60,24 @@ export const projects: Project[] = [
     image: "/portfolio/inclusive-education.jpg",
   },
   {
-  id: "women-success-stories",
-  category: "Campaigns",
-  title: "Public Awareness Campaign on Women’s Success Stories",
-  subtitle: "Public Awareness Campaign",
-  image: "/portfolio/women-success-stories-campaign.jpeg",
-},
+    id: "women-success-stories",
+    category: "Campaigns",
+    title: "Public Awareness Campaign on Women’s Success Stories",
+    subtitle: "Public Awareness Campaign",
+    image: "/portfolio/women-success-stories-campaign.jpeg",
+  },
+  {
+    id: "combating-hate-speech",
+    category: "Campaigns",
+    title: "Combating Hate Speech Through Public Awareness",
+    subtitle: "Human Rights Defender of Armenia | EU & Council of Europe Project",
+    image: "/portfolio/combating-hate-speech.png",
+    metrics: [
+      { value: "30+", label: "media outlets" },
+      { value: "National TV", label: "Public Television" },
+      { value: "Regional TV", label: "regional broadcasts" },
+    ],
+  },
 
   {
     id: "symbol-brand-storytelling",
@@ -90,17 +102,17 @@ export const projects: Project[] = [
       { value: "4.1×", label: "increase in requests" },
     ],
   },
-    {
-  id: "humanizing-political-leader-storytelling",
-  category: "Storytelling",
-  title: "Human-Centered Storytelling",
-  subtitle: "Humanizing a Political Leader Through Storytelling",
-  image: "/portfolio/human-centered.png",
-  metrics: [
-    { value: "1M+", label: "social media views" },
-    { value: "50+", label: "media publications" },
-  ],
-},
+  {
+    id: "humanizing-political-leader-storytelling",
+    category: "Storytelling",
+    title: "Human-Centered Storytelling",
+    subtitle: "Humanizing a Political Leader Through Storytelling",
+    image: "/portfolio/human-centered.png",
+    metrics: [
+      { value: "1M+", label: "social media views" },
+      { value: "50+", label: "media publications" },
+    ],
+  },
 
   {
     id: "brand-identity-development",
@@ -117,11 +129,11 @@ export const projects: Project[] = [
     title: "Arman Tatoyan — Executive Positioning & Public Reputation",
     subtitle: "Human Rights Defender of Armenia",
     image: "/portfolio/arman-tatoyan-positioning.jpg",
-   metrics: [
-  { value: "29% → 81%", label: "Institutional Trust" },
-  { value: "10K → 60K", label: "Facebook Followers" },
-  { value: "0 → 30K", label: "Instagram Followers" },
-],
+    metrics: [
+      { value: "29% → 81%", label: "Institutional Trust" },
+      { value: "10K → 60K", label: "Facebook Followers" },
+      { value: "0 → 30K", label: "Instagram Followers" },
+    ],
   },
 
   {
@@ -139,6 +151,4 @@ export const projects: Project[] = [
     subtitle: "U.S. Alumni Association of Armenia",
     image: "/portfolio/success-stories-video-series.png",
   },
-
-
 ];

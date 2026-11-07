@@ -69,10 +69,29 @@ export default function SelectedWork({
 
       <div className={styles.workGrid}>
         {filteredProjects.map((project) => (
-          <article
-            key={project.id}
-            className={styles.workCard}
-          >
+          <Link
+  key={project.id}
+  href={
+    project.id === "inclusive-education"
+      ? "https://changetheworld.tilda.ws/"
+      : project.id === "women-success-stories"
+      ? "https://set-an-example.tilda.ws/"
+      : `/${locale}/nune-hovsepyan/${project.id}`
+  }
+  target={
+    project.id === "inclusive-education" ||
+    project.id === "women-success-stories"
+      ? "_blank"
+      : undefined
+  }
+  rel={
+    project.id === "inclusive-education" ||
+    project.id === "women-success-stories"
+      ? "noopener noreferrer"
+      : undefined
+  }
+  className={styles.workCard}
+>
             <div className={styles.cardImageWrap}>
               <Image
                 src={project.image}
@@ -114,38 +133,11 @@ export default function SelectedWork({
                   </div>
                 )}
 
-              {/* VIEW CASE LINK */}
-
-              {project.id ===
-              "inclusive-education" ? (
-                <a
-                  href="https://changetheworld.tilda.ws/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.viewCase}
-                >
-                  VIEW CASE →
-                </a>
-              ) : project.id ===
-                "women-success-stories" ? (
-                <a
-                  href="https://set-an-example.tilda.ws/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.viewCase}
-                >
-                  VIEW CASE →
-                </a>
-              ) : (
-                <Link
-                  href={`/${locale}/nune-hovsepyan/${project.id}`}
-                  className={styles.viewCase}
-                >
-                  VIEW CASE →
-                </Link>
-              )}
+              <span className={styles.viewCase}>
+  VIEW CASE →
+</span>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
     </section>

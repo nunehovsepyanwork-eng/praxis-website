@@ -79,10 +79,7 @@ export default async function CaseStudyPage({ params }: Props) {
             <p className={styles.subtitle}>
               {project.subtitle}
             </p>
-
-            <p className={styles.heroIntro}>
-              {project.intro}
-            </p>
+            
           </div>
         </section>
 
@@ -142,66 +139,65 @@ export default async function CaseStudyPage({ params }: Props) {
           </section>
         ) : (
           <>
+            
             {/* OVERVIEW */}
-            <section className={styles.contentSection}>
-              <div className={styles.sectionTitleRow}>
+            <details className={styles.contentSection} open>
+              <summary className={styles.sectionTitleRow}>
                 <h2>Overview</h2>
-                <span className={styles.sectionMark}>
-                  —
-                </span>
-              </div>
+                <span
+                  className={styles.sectionMark}
+                  aria-hidden="true"
+                />
+              </summary>
 
               <p className={styles.sectionText}>
                 {project.intro}
               </p>
-            </section>
+            </details>
 
             {/* ROLE */}
-            <section className={styles.contentSection}>
-              <div className={styles.sectionTitleRow}>
+            <details className={styles.contentSection} open>
+              <summary className={styles.sectionTitleRow}>
                 <h2>Role & Team</h2>
-                <span className={styles.sectionMark}>
-                  —
-                </span>
-              </div>
+                <span
+                  className={styles.sectionMark}
+                  aria-hidden="true"
+                />
+              </summary>
 
               <div className={styles.textStack}>
                 {project.role.map((paragraph) => (
-                  <p key={paragraph}>
-                    {paragraph}
-                  </p>
+                  <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
-            </section>
+            </details>
 
             {/* CHALLENGE */}
-            <section className={styles.contentSection}>
-              <div className={styles.sectionTitleRow}>
+            <details className={styles.contentSection} open>
+              <summary className={styles.sectionTitleRow}>
                 <h2>Campaign Challenge</h2>
-                <span className={styles.sectionMark}>
-                  —
-                </span>
-              </div>
+                <span
+                  className={styles.sectionMark}
+                  aria-hidden="true"
+                />
+              </summary>
 
               <div className={styles.textStack}>
-                {project.challenge.map(
-                  (paragraph) => (
-                    <p key={paragraph}>
-                      {paragraph}
-                    </p>
-                  )
-                )}
+                {project.challenge.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
               </div>
-            </section>
+            </details>
 
             {/* STRATEGIC APPROACH */}
-            <section className={styles.contentSection}>
-              <div className={styles.sectionTitleRow}>
+            <details className={styles.contentSection} open>
+              <summary className={styles.sectionTitleRow}>
                 <h2>Strategic Approach</h2>
-                <span className={styles.sectionMark}>
-                  —
-                </span>
-              </div>
+                <span
+                  className={styles.sectionMark}
+                  aria-hidden="true"
+                />
+              </summary>
 
               {project.approachIntro && (
                 <p className={styles.approachIntro}>
@@ -215,113 +211,82 @@ export default async function CaseStudyPage({ params }: Props) {
                     className={styles.approachRow}
                     key={item.number}
                   >
-                    <div
-                      className={
-                        styles.approachNumber
-                      }
-                    >
+                    <div className={styles.approachNumber}>
                       {item.number}
                     </div>
 
-                    <div
-                      className={
-                        styles.approachBody
-                      }
-                    >
+                    <div className={styles.approachBody}>
                       <h3>{item.title}</h3>
-
                       <p>{item.text}</p>
 
                       {item.selectedWork &&
-                        item.selectedWork.length >
-                          0 && (
-                          <div
-                            className={
-                              styles.approachLinks
-                            }
-                          >
-                            {item.selectedWork.map(
-                              (work) => (
-                                <a
-                                  key={work.url}
-                                  href={work.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className={
-                                    styles.approachLink
-                                  }
-                                >
-                                  <span>
-                                    {work.label}
-                                  </span>
-                                  <span>↗</span>
-                                </a>
-                              )
-                            )}
+                        item.selectedWork.length > 0 && (
+                          <div className={styles.approachLinks}>
+                            {item.selectedWork.map((work) => (
+                              <a
+                                key={work.url}
+                                href={work.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.approachLink}
+                              >
+                                <span>{work.label}</span>
+                                <span>↗</span>
+                              </a>
+                            ))}
                           </div>
                         )}
                     </div>
                   </div>
                 ))}
               </div>
-            </section>
+            </details>
 
             {/* IMPACT */}
-            <section className={styles.contentSection}>
-              <div className={styles.sectionTitleRow}>
+            <details className={styles.contentSection} open>
+              <summary className={styles.sectionTitleRow}>
                 <h2>Impact</h2>
-                <span className={styles.sectionMark}>
-                  —
-                </span>
-              </div>
+                <span
+                  className={styles.sectionMark}
+                  aria-hidden="true"
+                />
+              </summary>
 
               <div className={styles.textStack}>
                 {project.impact.map((paragraph) => (
-                  <p key={paragraph}>
-                    {paragraph}
-                  </p>
+                  <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
-            </section>
+            </details>
 
             {/* RESULTS */}
             {project.metrics.length > 0 && (
-              <section
+              <details
                 className={`${styles.contentSection} ${styles.resultsSection}`}
+                open
               >
-                <div
-                  className={
-                    styles.sectionTitleRow
-                  }
-                >
+                <summary className={styles.sectionTitleRow}>
                   <h2>Campaign Results</h2>
                   <span
                     className={styles.sectionMark}
-                  >
-                    —
-                  </span>
-                </div>
+                    aria-hidden="true"
+                  />
+                </summary>
 
                 <div className={styles.resultsGrid}>
                   {project.metrics.map((metric) => (
                     <div
-                      className={
-                        styles.resultMetric
-                      }
+                      className={styles.resultMetric}
                       key={metric.label}
                     >
-                      <strong>
-                        {metric.value}
-                      </strong>
-
-                      <span>
-                        {metric.label}
-                      </span>
+                      <strong>{metric.value}</strong>
+                      <span>{metric.label}</span>
                     </div>
                   ))}
                 </div>
-              </section>
+              </details>
             )}
+
           </>
         )}
       </main>

@@ -135,7 +135,7 @@ export default async function NuneHovsepyanPage({
           </div>
 
           <div className={styles.metric}>
-            <strong>50+</strong>
+            <strong>20+</strong>
             <span>Projects & Campaigns</span>
           </div>
 

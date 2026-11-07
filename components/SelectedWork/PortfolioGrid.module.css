@@ -88,6 +88,8 @@
   background: #fbfaf8;
   border: 1px solid #dedad4;
   animation: cardReveal 0.35s ease both;
+  text-decoration: none;
+  color: inherit;
 }
 
 .cardImageWrap {
